@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+.topHeader {
+  width: 100%;
+  height: 36px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  text-align: center;
+  background-color: white;
+}
+
+.page-wrapper {
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.columnA {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.columnB {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+  min-height: 100%;
+  margin-top: 10px;
+  border-left: 2px solid rgb(156, 156, 156);
+  border-right: 2px solid rgb(156, 156, 156);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.9rem;
+  font-family: 'Inconsolata', monospace;
+  margin: 12px 0;
+  padding: 15px 0;
+}
+
+.minispace {
+  font-size: 1.1rem;
+}
+.bracket {
+  font-size: 3.5rem;
+}
+
+.headshot {
+  max-height: 100px;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle(50%);
+  margin-right: 9px;
+}
+.headline {
+  margin: 12px 9px;
+}
+
+.headline h3 {
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  font-weight: 800;
+  margin-right: 6px;  
+}
+
+.nav {
+  margin-top: 15px;
+}
+
+ul {
+  padding: 0;
+  margin: 15px;
+}
+
+li {
+  border-top: 1px solid grey;
+  list-style-type: none;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.right-container {
+  background-color: white;
+}
+
+.bio {
+  margin: 18px 30px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+h2 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.7rem;
+  line-height: 1.1rem;
+  margin: 15px 0;
+}
+
+.project {
+  margin: 18px 24px;
+  padding: 9px 18px;
+  border: 5px solid rgb(151, 180, 163);
+  border-radius: 4px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+.galleryPic {
+  max-height: 200px;
+  border-radius: 4px;
+}
+
+footer {
+  z-index: 2;
+  height: 36px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  font-size: .8em;
+  text-align: center;
+  padding-top: 9px;
+  color: rgb(68, 68, 68);
+}
