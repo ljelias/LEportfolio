@@ -56,8 +56,13 @@ h1 {
   text-align: center;
   font-size: 2.9rem;
   font-family: 'Inconsolata', monospace;
-  margin: 12px 0;
-  padding: 15px 0;
+  margin: 12px 6px;
+  padding: 21px 0 6px 0;
+}
+
+h1:hover {
+  background-color: rgb(245, 245, 245);
+  box-shadow: 1px 2px 4px #888888;
 }
 
 .minispace {
@@ -79,9 +84,10 @@ h1 {
 }
 
 .headline h3 {
-  font-size: 1.2rem;
-  line-height: 1.3rem;
-  font-weight: 800;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 500;
   margin-right: 6px;  
 }
 
@@ -89,35 +95,75 @@ h1 {
   margin-top: 15px;
 }
 
-ul {
+#mainNav {
   padding: 0;
-  margin: 15px;
+  margin: 15px 24px;
+  border-bottom: 1px solid grey;
 }
 
 .nav li {
-  margin: 0 9px;
-  padding: 21px 0;
+  margin: 0;
+  padding: 15px 0;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  font-weight: 500;
   list-style-type: none;
   border-top: 1px solid grey;
+}
+
+.nav li:hover {
+  background-color: rgb(245, 245, 245);
+  box-shadow: 1px 2px 4px #888888;
 }
 
 .right-container {
   background-color: white;
 }
 
-.bio,
-.skills,
-.gallery,
-.connect {
+#welcome,
+#bio,
+#skills,
+#gallery,
+#connect {
   margin: 15px 30px 12px 30px;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.4rem;
   padding-bottom: 24px;
-  border-bottom: 1px solid grey;
+}
+
+#bio p {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#skills li {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.welcome {
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  animation: 2s slide-down;
+  margin-top: 30vh;
+}
+@keyframes slide-down {
+  from { margin-top: -10vh; }
+  to   { margin-top: 30vh; }
+}
+
+.toPortfolio {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+  animation: fadein 7s;
+}
+@keyframes fadein {
+  from { opacity: 0; color: white; }
+  to   { opacity: 1; color: black; }
 }
 
 h2 {
@@ -189,23 +235,19 @@ h2 {
   border: 2px solid rgb(119, 142, 175);
 }
 
-.connect p {
-  text-align: center;
-  margin-bottom: 90px;
+#connect p {
+  margin-top: 36px;
+  font-size: 1.5rem;
 }
 
-.connect span {
-  display: inline-block;
-  margin: 0 2vw;
-  padding: 3px;
-}
-
-.connect span:hover {
+#connect span:hover {
   background-color: lightgray;
 }
-
-.connect img {
+#connect img {
   max-height: 50px;
+}
+#connect a {
+  text-decoration: none;
 }
 
 footer {
