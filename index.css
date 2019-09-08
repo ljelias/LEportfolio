@@ -35,6 +35,7 @@ html, body {
   flex-basis: 100%;
   flex: 1;
   min-width: 360px;
+  max-width: 525px;
   overflow: hidden;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -46,7 +47,7 @@ html, body {
   flex: 2;
   height: 100%;
   overflow-y: scroll;
-  min-width: 390px;
+  min-width: 465px;
 
   margin: 30px 0;
   border-left: 2px solid rgb(156, 156, 156);
@@ -78,7 +79,14 @@ h1:hover {
   float: left;
   shape-outside: circle(50%);
   margin: 0 9px 0 6px;
+  transition: transform 500ms ease-out;
+
 }
+.headshot:hover {
+  transform: rotate(30deg); 
+  transition: transform 300ms ease-in;
+}
+
 .headline {
   margin: 12px 9px;
 }
@@ -87,7 +95,7 @@ h1:hover {
   font-size: 1.3rem;
   line-height: 1.5rem;
   font-family: 'Inconsolata', monospace;
-  font-weight: 500;
+  font-weight: 600;
   margin-right: 6px;  
 }
 
@@ -130,7 +138,7 @@ h1:hover {
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.4rem;
-  padding-bottom: 24px;
+  padding-bottom: 60px;
 }
 
 #bio p {
@@ -148,15 +156,16 @@ h1:hover {
   font-weight: 700;
   text-align: center;
   animation: 2s slide-down;
-  margin-top: 30vh;
+  margin-top: 15vh;
 }
 @keyframes slide-down {
-  from { margin-top: -10vh; }
-  to   { margin-top: 30vh; }
+  from { margin-top: -18vh; }
+  to   { margin-top: 15vh; }
 }
 
 .toPortfolio {
   font-size: 3.5rem;
+  line-height: 3.8rem;
   font-weight: 600;
   text-align: center;
   animation: fadein 7s;
@@ -166,11 +175,77 @@ h1:hover {
   to   { opacity: 1; color: black; }
 }
 
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 15vh;
+}
+.circle {
+  display: inline-block;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  margin: 3px;
+  box-shadow: 0px 3px 4px #888888;
+
+} 
+.circle:hover {
+  transform: translateY(-40px);
+  box-shadow: 0px 0px 4px #888888;
+
+
+}
+
+.c0 {
+  @extend .circle;
+  background: rgb(252, 83, 83);
+  transition: all .2s ease-in;
+  background-image: linear-gradient(rgb(255, 174, 165),rgb(250, 82, 63));
+
+} 
+.c1 {
+  @extend .circle;
+  background: rgb(143, 253, 32);
+  transition: all .2s ease-in;
+  background-image: linear-gradient(rgb(183, 253, 112),rgb(103, 206, 0));
+}
+.c2 {
+   @extend .circle;
+  background: rgb(3, 236, 236);
+  transition: all .2s ease-in;
+  background-image: linear-gradient(rgb(152, 255, 255),rgb(1, 211, 211));
+}
+.c3 {
+  @extend .circle;
+  background: yellow;
+  transition: all .2s ease-in;
+  background-image: linear-gradient(rgb(252, 252, 115),rgb(214, 214, 1));
+}
+.c4 {
+  @extend .circle;
+  background: fuchsia;
+  transition: all .2s ease-in;
+  background-image: linear-gradient(rgb(253, 122, 253),fuchsia);
+}
+.c5 {
+  @extend .circle;
+  background: rgb(250, 163, 32);
+  transition: all .2s ease-in;
+  background-image: linear-gradient(rgb(253, 204, 114),darkorange);
+}
+.c6 {
+  @extend .circle;
+  background: lime;
+  transition: all .2s ease-in;
+  background-image: linear-gradient(lightgreen,green);
+}
+
 h2 {
   font-family: 'Inconsolata', monospace;
   font-size: 1.9rem;
   line-height: 1.1rem;
-  margin: 6px 0 21px 0;
+  margin: 6px 0 30px 0;
 }
 
 .toolList {
@@ -215,10 +290,12 @@ h2 {
   max-height: 200px;
   border-radius: 3px;
   float: right;
+  margin-left: 6px;
+  margin-bottom: 6px;
 }
 
 .projectLinks {
-  margin: 30px 0 15px 0;
+  margin: 24px 0 15px 0;
 }
 
 .project a {
@@ -226,29 +303,60 @@ h2 {
   color: black;
   text-decoration: none;
   background-color: rgb(226, 239, 245);
+  border: 1px dotted gray;
   border-radius: 3px;
+  box-shadow: 1px 2px 4px #b3b3b3;
   padding: 6px 9px;
-  margin: 0 9px;
+  margin-right: 4px;
 }
 
 .project a:hover {
   border: 2px solid rgb(119, 142, 175);
 }
-
-#connect p {
+.contactList {
+  margin-top: 60px;
+  padding-left: 30px;
+}
+.contactList p {
   margin-top: 36px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  width: 300px;
+  padding-left: 12px;
+}
+.contactList img {
+  max-height: 50px;
+  vertical-align: middle;
+  margin: -12px 0;
+}
+.contactList a {
+  text-decoration: none;
+  color: black;
+}
+.smIcon {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.contactLink:hover {
+  box-shadow: 1px 2px 4px #888888;
+}
+.fun {
+  margin-top: 90px;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+.spin {
+  display: inline-block;
+  text-align: center;
+  color: lightgray;
+  padding: 0 .5vw;
+}
+.spin:hover {
+  transform: rotate(180deg);
+  color: black;
 }
 
-#connect span:hover {
-  background-color: lightgray;
-}
-#connect img {
-  max-height: 50px;
-}
-#connect a {
-  text-decoration: none;
-}
 
 footer {
   z-index: 2;
