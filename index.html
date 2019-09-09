@@ -21,16 +21,14 @@
             <h3>Full-stack web developer based in Minnesota, with a background in linguistics and higher education.</h3>
           </div>
         </header>
-        <div class='nav'>
-          <nav>
+        <nav class='nav'role='navigation'>
             <ul id='mainNav'>
               <li id='aboutLink'>About me</li>
               <li id='skillsLink'>Skills</li>
               <li id='galleryLink'>Portfolio</li>
               <li id='connectLink'>Contact</li>
             </ul>
-          </nav>
-        </div>
+        </nav>
       </div>
       <div class='columnB'>
 
@@ -52,24 +50,25 @@
           <h2>A bit about me...</h2>
           <p>When life forced me to finally admit that I needed a new career avenue with better employment prospects, 
               web development was an easy choice. I had considered majoring in computer science as an undergrad, and  
-              totally enjoyed a programming class I took. Having already learned the basics of HTML, I didn't hesitate to jump into 
+              totally enjoyed a programming class I took. Since I already knew the basics of HTML, I didn't hesitate to jump into 
               a 12-week full-stack web development bootcamp at the University of Minnesota.
-              From there I went on to the engineering immersion program at Thinkful to further develop my skills.</p> 
+              Then I went on to the engineering immersion program at Thinkful to further develop my skills.</p> 
               <p>Considering that I have a wide 
               range of interests, I can envision my web development career path potentially taking several different directions...</p>
-          <p>My years of experience in higher education has given me an insider perspective of the educational technology needs 
-              of post-secondary students and faculty. I have dealt with a range of technology applications, both good and not-so-good, 
+          <p>My experience in higher education has given me an insider perspective of the educational technology needs 
+              of post-secondary students and faculty. I have used a range of technology applications, both good and not-so-good, 
               so I bring a lot to the table from an authentic UX perspective. My field is linguistics and language education, and I 
               believe there is still plenty of room for development in the area of language instruction applications.</p>
-          <p>My speciality is in phonetics/phonology/pronunciation, so an area that fascinates me is speech recognition and production. 
+          <p>My speciality is phonetics/phonology/pronunciation, so an area that fascinates me is speech recognition/production. 
               I have a knack for analyzing pronunciation patterns, and my ear automatically tunes in to computer generated 
-              speech, whether I want to or not! As I instinctively analyze the unnatural sounding aspects 
-              of the techno-voices, I often think things such as: "Don't they realize that in "X" context, "Y" sound 
-              is pronounced as "Z"...?" I am sure I have much to bring to the table in the realm of computer-generated speech.</p>
+              speech ...whether I want to or not! As I instinctively analyze the unnatural sounding features 
+              of techno-voices, I often think things such as: "Don't they realize that in 'X' context, 'Y' sound 
+              is pronounced as 'Z'...?" I am sure I have much to offer in the realm of computer-generated speech.</p>
           <p>There are certainly other avenues that would also be a good fit for me as a web developer, because when I’m not busy 
               coding or writing down language examples in my notebook, you will most likely find me involved in 
               urban farming and community gardening activities, playing my cello, hanging a cabinet in my kitchen, or swimming or 
               biking with my sons.</p>
+          <p class='smile'>&#9786;</p>
         </section>
 
         <section id='skills' style='display:none'>
@@ -165,7 +164,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
 
-$(document).ready(function() {
+    $(document).ready(function() {
+
       $('h1').on('click', function() {
           $('#bio, #skills, #gallery, #connect').hide();
           $('#welcome').fadeIn(1000);
