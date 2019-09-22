@@ -64,6 +64,9 @@ h1:hover {
   background-color: rgb(245, 245, 245);
   box-shadow: 1px 2px 4px #888888;
 }
+h1:active {
+  background-color: rgb(211, 211, 211);
+}
 .minispace {
   font-size: 1.1rem;
 }
@@ -114,6 +117,9 @@ h1:hover {
 .nav li:hover {
   background-color: rgb(245, 245, 245);
   box-shadow: 1px 2px 4px #888888;
+}
+.nav li:active {
+  background-color: rgb(211, 211, 211);
 }
 
 #welcome,
@@ -286,14 +292,19 @@ h2 {
   color: black;
   text-decoration: none;
   background-color: rgb(226, 239, 245);
-  border: 1px dotted gray;
+  border: 2px dotted rgb(175, 175, 175);
   border-radius: 3px;
   box-shadow: 1px 2px 4px #b3b3b3;
-  padding: 6px 9px;
+  padding: 6px 12px;
   margin-right: 4px;
 }
 .project a:hover {
   border: 2px solid rgb(119, 142, 175);
+}
+.project a:active {
+  color: white;
+  background-color: rgb(165, 202, 218);
+
 }
 
 .contactList {
@@ -381,6 +392,9 @@ footer {
     border-left: 2px solid rgb(156, 156, 156);
     overflow-y: scroll;
   }
+  
+
+  
   #welcome,
   #bio,
   #skills,
@@ -388,6 +402,8 @@ footer {
   #connect {
     margin-top: 15px;
     margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
   }
 
   .headline h3,
@@ -396,7 +412,7 @@ footer {
   }
   .nav li {
     padding: 12px 0;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   .welcome {
     font-size: 5rem;
@@ -410,6 +426,16 @@ footer {
     padding-left: 12px;
     padding-right: 12px;
   }  
+  #skills li {
+    font-size: 1.4rem;
+  }  
+  .project {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+  .contactList p {
+    font-size: 1.2rem;
+  }
   .spin {
     padding: 0 .2vw;
   }
