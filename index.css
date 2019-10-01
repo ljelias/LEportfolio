@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 html, body {
   height: 100%;
   overflow: hidden;
@@ -16,7 +15,6 @@ html, body {
   text-align: center;
   background-color: white;
 }
-
 .page-wrapper {
   height: 100%;
 }
@@ -31,7 +29,6 @@ html, body {
   padding-bottom: 30px;
   overflow-y: scroll;
 }
-
 .columnA {
   display: flex;
   flex-direction: column;
@@ -41,7 +38,6 @@ html, body {
   overflow: hidden;
   font-family: 'Courier New', Courier, monospace;
 }
-
 .columnB {
   display: flex;
   flex-direction: column;
@@ -78,7 +74,7 @@ h1:active {
   border-radius: 50%;
   float: left;
   shape-outside: circle(50%);
-  margin: 0 9px 0 6px;
+  margin: 0 9px;
   transition: transform 500ms ease-out;
 }
 .headshot:hover {
@@ -89,28 +85,28 @@ h1:active {
   margin: 12px 0;
 }
 .headline h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.3rem;
   font-family: 'Inconsolata', monospace;
   font-weight: 600;
   margin: 0;
+  padding-right: 12px;
 }
-.nav {
-  margin-top: 3px;
-}
+
 #mainNav {
   padding: 0;
-  margin: 15px 24px;
-  border-bottom: 1px solid grey;
+  margin: 15px 0px;
+  text-align: center;
 }
 .nav li {
-  margin: 0;
-  padding: 6px 0;
-  text-align: center;
-  font-size: 1.2rem;
+  display: inline;
+  margin: 0 -2px;
+  padding: 6px 2%;
+  font-size: 0.8rem;
   font-weight: 500;
   list-style-type: none;
   border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 .nav li:hover {
   background-color: rgb(245, 245, 245);
@@ -137,14 +133,14 @@ h1:active {
   font-weight: 700;
   text-align: center;
   animation: slide-down 2s;
-  margin-top: 4vh;
+  margin-top: 3vh;
 }
 @keyframes slide-down {
-  from { margin-top: -12vh; }
-  to   { margin-top: 4vh; }
+  from { margin-top: -15vh; }
+  to   { margin-top: 3vh; }
 }
 .toPortfolio {
-  font-size: 3rem;
+  font-size: 2.7rem;
   line-height: 3.6rem;
   font-weight: 600;
   text-align: center;
@@ -220,7 +216,7 @@ h1:active {
 
 h2 {
   font-family: 'Inconsolata', monospace;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.1rem;
   margin: 6px 0 18px 0;
 }
@@ -272,7 +268,7 @@ h2 {
   padding-bottom: 9px;
 }
 .galleryPic {
-  max-height: 159px;
+  max-height: 150px;
   border-radius: 3px;
   float: right;
   margin-bottom: 6px;
@@ -301,7 +297,7 @@ h2 {
 
 .contactList {
   margin-top: 40px;
-  padding-left: 24px;
+  padding-left: 18px;
 }
 .contactList p {
   margin-top: 36px;
@@ -328,7 +324,7 @@ h2 {
 
 .fun {
   margin-top: 75px;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 600;
   text-align: center;
 }
@@ -343,11 +339,11 @@ h2 {
   color: black;
 }
 
-
 footer {
   z-index: 2;
   height: 36px;
   width: 100%;
+  margin-left: -9px;
   background-color: white;
   position: fixed;
   bottom: 0;
@@ -355,6 +351,7 @@ footer {
   text-align: center;
   padding-top: 9px;
   color: rgb(68, 68, 68);
+  box-shadow: 0px -1px 6px #e0e0e0;
 }
 
 
@@ -386,32 +383,39 @@ footer {
     margin: 12px 9px;
   }
   .headline h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 1.5rem;
     font-weight: 600;
     margin-right: 6px;
     margin-bottom: 3px; 
     padding: 0;
   }
+  #mainNav {
+    margin: 15px 9px;
+  }
+  .nav li {
+    padding: 6px 2%;
+    font-size: 1.1rem;
+  }  
   #welcome,
   #bio,
   #skills,
   #gallery,
   #connect {
-    margin: 10px 30px 60px 30px;
+    margin: 10px 20px 60px 20px;
     font-size: 1rem;
     line-height: 1.5rem;
   }
   .welcome {
     font-size: 4.5rem;
-    margin-top: 5vh;
+    margin-top: 4vh;
   }
   @keyframes slide-down {
     from { margin-top: -18vh; }
-    to   { margin-top: 5vh; }
+    to   { margin-top: 4vh; }
   }
   .toPortfolio {
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 4rem;
     margin-left: 30px;
     margin-right: 30px;
@@ -426,7 +430,7 @@ footer {
     box-shadow: 0px 4px 6px #888888;
   }
   h2 {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     line-height: 1.1rem;
     margin: 6px 0 24px 0;
   }
@@ -454,18 +458,21 @@ footer {
   }
   
   .contactList {
-    margin-top: 60px;
     padding-left: 30px;
   }
   .fun {
     margin-top: 90px;
     font-size: 2.9rem;
   }
+  .spin {
+    padding: 0 0.5vw;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-  .spin {
-    padding: 0 .5vw;
+  .columnA {
+    margin-left: auto;
+    margin-right: auto;
   }
   .welcome {
     font-size: 5rem;
@@ -475,10 +482,27 @@ footer {
     from { margin-top: -18vh; }
     to   { margin-top: 9vh; }
   }
+  .headline {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   .headline h3 {
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
+  .nav li {
+    margin: 0;
+    padding: 6px 3%;
+    font-size: 1.2rem;
+  } 
+  .contactList {
+    padding-left: 39px;
+  }
+  .spin {
+    padding: 0 .7vw;
+  }
+
+
 }
 
 @media only screen and (min-width: 840px) {
@@ -492,14 +516,27 @@ footer {
     max-width: 525px;
   }
   .columnB {
-    padding-top: 0;
+    padding-top: 21px;
     border-left: 2px solid rgb(156, 156, 156);
     overflow-y: scroll;
+  }
+  .headline {
+    padding: 0;
   }
   .headline h3 {
     font-size: 1.1rem;
     line-height: 1.3rem;
   }  
+  #mainNav {
+    padding: 0;
+    margin: 15px 24px;
+    border-bottom: 1px solid grey;
+  }
+  .nav li {
+    display: block;
+    border-bottom: 0px solid white;
+  }
+
   #welcome,
   #bio,
   #skills,
@@ -526,6 +563,9 @@ footer {
   #bio p {
     padding-left: 12px;
     padding-right: 12px;
+  }
+  .toolList {
+    margin-left: 5vw;
   }  
   #skills li {
     font-size: 1.4rem;
