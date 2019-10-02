@@ -487,7 +487,7 @@ footer {
     padding-right: 5%;
   }
   .headline h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.5rem;
   }
   .nav li {
@@ -501,8 +501,6 @@ footer {
   .spin {
     padding: 0 .7vw;
   }
-
-
 }
 
 @media only screen and (min-width: 840px) {
@@ -524,8 +522,8 @@ footer {
     padding: 0;
   }
   .headline h3 {
-    font-size: 1.1rem;
-    line-height: 1.3rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
   }  
   #mainNav {
     padding: 0;
