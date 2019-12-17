@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans+KR:100,300,400|PT+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="index.css" rel="stylesheet" type="text/css" />
 
   <title>Elias</title>
@@ -15,7 +16,7 @@
     <div class='row'>
       <div class='columnA'>
         <header class='leftHead'>
-          <h1><span class='bracket'>&lang;</span><span class='minispace'>&nbsp;</span><span id='name'>Laura Elias</span><span class='minispace'>&nbsp;</span><span class='bracket'>&rang;</span></h1>
+          <h1 id='mainH1'><span class='bracket'>&lang;</span><span class='minispace'>&nbsp;</span><span id='name'>Laura Elias</span><span class='minispace'>&nbsp;</span><span class='bracket'>&rang;</span></h1>
           <div class='headline'>
             <img class='headshot' src="./assets/2016CVCme.jpg"/>
             <h3>Full-stack web developer based in Minnesota, with a background in linguistics and higher education.</h3>
@@ -25,7 +26,7 @@
             <ul id='mainNav'>
               <li id='aboutLink'>About me</li>
               <li id='skillsLink'>Skills</li>
-              <li id='galleryLink'>Portfolio</li>
+              <li id='galleryLink'>Project Gallery</li>
               <li id='connectLink'>Contact</li>
             </ul>
         </nav>
@@ -140,8 +141,8 @@
             <div class='contactList'>
               <p class='contactLink'><a href="https://github.com/ljelias" target="blank"><img src='./assets/gitIcon.PNG' alt='github icon'/>Visit my github</a></p>
               <p class='contactLink'><a href="https://www.linkedin.com/in/laura-elias-98936331/" target="blank"><img src='./assets/inIcon.PNG' alt='linked-in icon' />Find me on LinkedIn</a></p>
-              <p>&nbsp;&nbsp;<span class='smIcon'>&#128386;</span> laura.j.elias@gmail.com  </p>
-              <p>&nbsp;&nbsp;<span class='smIcon'>&#128196;</span> Resume link coming soon</p>
+              <p class='contactLink'>&nbsp;&nbsp;<span class='smIcon'>&#128196;</span><a onclick="document.getElementById('resume').style.display='block'">&nbsp;My Resume</a></p>
+              <p>&nbsp;&nbsp;<span class='smIcon'>&#128386;</span>&nbsp;email:&nbsp;<em>please see my resume</em></p>
           </div>
           <p class='fun'>
             <span class='spin'><</span>
@@ -156,6 +157,132 @@
             <span class='spin'>></span></p>
 
         </section>
+
+        <section id="resume" class="w3-modal w3-animate-zoom">
+          <div class="w3-modal-content w3-card-4" id=resumeContainer>
+                <div class="w3-container w3-light-gray">
+                        <span onclick="document.getElementById('resume').style.display='none'"
+                          class="w3-button w3-large w3-display-topright">&times;</span></div>
+              
+            <div id="resumeHeading">
+              <h1 class="resumeh1">Laura J Elias</h1>
+              <h3 class="resumeh3">5350 Hiawatha Lane, Minneapolis, MN 55417</h3>
+              <h3 class="resumeh3">612-203-8893 / laura.j.elias@gmail.com</h3>
+            </div>
+        
+            <hr class="resumehr">
+            <h4 class="resumeh4">OBJECTIVE: <span id="p">A web-development position ideally within the areas of secondary or higher education or
+                a language/linguistics field.</span></h4>
+        
+            <h4 class="resumeh4">EDUCATION AND TRAINING</h4>
+            <p class='resumeParag'><span class="position">Engineering Immersion Program,</span> Thinkful, January 2020</p>
+            <p class='resumeParag'><span class="position">Full-Stack Web Development Boot Camp,</span> University of Minnesota, July 2019</p>
+            <p class='resumeParag'><span class="position">M.A. English as a Second Language,</span> University of Minnesota, June 2000</p>
+            <p class='resumeParag'><span class="position">M.A. Hispanic Linguistics,</span> University of Minnesota, December 1999 </p>
+            <p class='resumeParag'><span class="position">B.S. Social Work (Summa Cum Laude),</span> Winona State University, December 1987</p>
+            <p class='resumeParag'><span class="position">B.A. Music (Summa Cum Laude),</span> Winona State University, December 1987</p>
+            <hr class="resumehr">
+            <h4 class="resumeh4">ACADEMIC WORK EXPERIENCE</h4>
+        
+            <h5 class="resumeh5">The ProfessorCoach LLC, Minneapolis, MN</h5>
+            <p class='resumeParag'><span class="position">Pronunciation/accent reduction consultant.</span> May 2012 – current.</p>
+            <blockquote><a href="http://pronunciationcoach.com/">http://pronunciationcoach.com/</a>&nbsp;~~&nbsp;<a
+                href="http://pronunciationcoach.wordpress.com/">http://pronunciationcoach.wordpress.com/</a>
+            </blockquote>
+            <h5 class="resumeh5">North Central University, Minneapolis, MN</h5>
+            <p class='resumeParag'><span class="position">Adjunct Faculty.</span> TEFL and Spanish Departments; 2003–2004; 2013 – 2018.</p>
+        
+            <h5 class="resumeh5">Minneapolis Community and Technical College, Minneapolis, MN</h5>
+            <p class='resumeParag'><span class="position">Adjunct Faculty.</span> ESOL (English for Speakers of Other Languages); August 2000 – July
+              2003, August 2004 – April 2011.</p class='resumeParag'>
+            <p class="description">Intermediate and advanced ESOL courses. Collaborated on assessment projects of student
+              placement and progress. Curriculum development. Developing placement and exit exams. Supervising student workers. Writing
+              instruction manuals for the digital language lab.</p>
+            <p class='resumeParag'><span class="position">Translator.</span> May – August 2004</p>
+            <p class="description">Translated Health Care Core Curriculum from English to Spanish.</p>
+        
+            <h5 class="resumeh5">University of Minnesota, Minneapolis, MN</h5>
+            <p class='resumeParag'><span class="position">SPEAK Test Rater.</span> 1995-96, July 2000 – May 2010.</p>
+            <p class="description"> Rating oral exams of English as a Second language.</p>
+            <p class='resumeParag'><span class="position">Teaching Specialist.</span> Minnesota English Center; June – August 2000.</p>
+            <p class='resumeParag'><span class="position">Teaching Assistant.</span></p>
+            <p class="description"> Department of Spanish and Portuguese; September 1995 – May 1997.</p>
+            <p class="description">Composition Department; September 1993 – June 1995.</p>
+            <p class="description">Minnesota English Center; January 1991 – September 1996.</p>
+            <p class='resumeParag'><span class="position">Administrative Assistant.</span> Minnesota English Center; November 1990 – September 1996.
+            </p>
+            <p class="description">ETS/SPEAK Test survey project interviewer. Linguistics/ESL Reading Room attendant.
+              Registration assistant for English program for International Teaching Assistants.</p>
+        
+            <h5 class="resumeh5">Resource Center of the Americas, Minneapolis, MN</h5>
+            <p class='resumeParag'><span class="position">Spanish and ESL Instructor.</span> April 1999 – March 2001.</p>
+        
+            <h5 class="resumeh5">Southwest Christian High School, Chaska, MN</h5>
+            <p class='resumeParag'><span class="position">High school Instructor.</span> March 1998 – March 2000.</p>
+            <p class="description">High school Spanish levels I through V, German I, String Ensemble.</p>
+        
+            <h5 class="resumeh5">Century College, White Bear Lake, MN</h5>
+            <p class='resumeParag'><span class="position">Adjunct Faculty.</span> Spanish Department; April 1997 – December 1998.</p>
+        
+            <h5 class="resumeh5">University of St. Thomas, St. Paul, MN</h5>
+            <p class='resumeParag'><span class="position">Lecturer.</span> Intensive English as a Second Language summer program; Summer 1997.</p>
+
+            <hr class="resumehr">
+            <h4 class="resumeh4">NON-ACADEMIC WORK EXPERIENCE</h4>
+
+            <h5 class="resumeh5">US Bureau of the Census, Minneapolis, MN</h5>
+            <p class='resumeParag'><span class="position">Crew Leader.</span> Spring – Summer 2000.</p>
+            <p class="description">Supervised a team of census enumerators, assigned workloads, reviewed work for quality and
+              accuracy, and submitted pay/work records.</p>
+        
+            <h5 class="resumeh5">ProStaff, Minneapolis, MN</h5>
+            <p class='resumeParag'><span class="position">Word Processing/Software Temporary.</span> March – August 2000.</p>
+            <p class="description">Short-term assignments at various corporations, performing word processing, data entry,
+              translating customer
+              complaints and reconciling financial records.</p>
+        
+            <h5 class="resumeh5">Hennepin County Family Services, Minneapolis, MN</h5>
+            <p class='resumeParag'><span class="position">Spanish Interpreter.</span> Summer 1999.</p>
+        
+            <h5 class="resumeh5">Staff Plus, Minneapolis, MN</h5>
+            <p class='resumeParag'><span class="position">Word Processing/Office Temporary.</span> February 1989 – September 1990.</p>
+            <p class="description">Short-term assignments within various corporations, primarily as a word processing and
+              software specialist.</p>
+        
+            <h5 class="resumeh5">CLUES (Comunidades Latinas Unidas En Servicios), St. Paul, MN</h5>
+            <p class='resumeParag'><span class="position">Social Work Intern.</span> September – December 1987.</p>
+            <p class="description">Assisted case workers with Hispanic clients seeking assistance and referrals for job
+              searching, language learning,
+              and transitioning into American culture.</p>
+        
+            <h5 class="resumeh5">Winona Family YMCA, Winona MN</h5>
+            <p class='resumeParag'><span class="position">Aquatics Supervisor & Swimming Instructor.</span> June 1985 – July 1987.</p>
+            <p class="description">Supervised & trained pool staff and volunteers. Developed educational & recreational
+              programs. Co-planned and
+              directed synchronized swimming team and water show. Scheduling, budgeting, & writing newsletter articles, PSAs,
+              and
+              program brochures.</p>
+            <hr class="resumehr">
+        
+            <h4 class="resumeh4">OTHER ACTIVITIES and PUBLIC SERVICE</h4>
+            <ul class='otherList'>
+              <li>Coordinator of St. Stephen’s Whittier Community Garden, Minneapolis MN, 2016-2018</li>
+              <li>Past member of International TESOL (Teachers of English to Speakers of Other Languages)</li>
+              <li>ESL Club Executive Committee, Department of ESL, University of Minnesota, 1994-95</li>
+              <li>Various language/linguistics conference presentations</li>
+            </ul>
+            <hr class="resumehr">
+        
+            <h4 class="resumeh4">LANGUAGES</h4>
+            <ul class='otherList'>
+              <li>Fluent in written and spoken Spanish</li>
+              <li>Simple translation from Portuguese</li>
+              <li>Basic written and spoken German</li>
+              <li>Beginning Arabic</li>
+            </ul>
+          </div>
+        </section> 
+
 
       </div>
     </div>
