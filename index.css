@@ -345,39 +345,65 @@ h2 {
   padding: 20px 6vw 35px 6vw;
 }
 #resumeHeading {
-  margin: 30px auto 21px auto;
-}
-.resumeh1,
-.resumeh3 {
-  margin: -6px 0;
-  padding: 0px 0;
+  margin: 15px auto;
 }
 .resumeh1 {
+  margin: 0;
+  padding: 0px 0;
+  color: rgb(50, 50, 50);
   text-align: left;
   font-size: 2.1em;
   font-weight: 600;
 }
 .resumeh3 {
-  font-size: 1.3em;
-  color: black;
+  margin: 0;
+  padding: 0px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(196, 75, 75);
   text-align: left;
 }
+.left {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+.right {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+}
 .resumeh4 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  color: rgb(50, 50, 50);
   font-weight: 600;
   margin: 21px 0 6px 0px;
 }
+#p {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 500;
+  margin: 0px 0 4px 0;
+}
+
 .resumeh5 {
-  font-size: 1.1em;
-  margin: 15px 0 0px 0;
-  color: black;
+  font-size: 1.1rem;
+  margin: 9px 0 0px 0;
+  color: rgb(196, 75, 75);
   font-weight: 600;
   text-align: left;
 }
 .resumeParag{
-  margin: 6px;
+  margin: 0px 12px;
   line-height: 1.2rem;
 }
+.pointer{
+  font-size: 1em;
+  margin: 0px 0 4px 0;
+  font-weight: 600;
+}
+
 .position {
   font-style: italic;
   font-size: 1em;
@@ -387,11 +413,6 @@ h2 {
 .description {
   font-size: 0.9rem;
   line-height: 1.1rem;
-  margin: 0px 0 4px 0;
-  font-weight: 400;
-}
-#p {
-  font-size: .85em;
   margin: 0px 0 4px 0;
   font-weight: 400;
 }
@@ -411,8 +432,9 @@ blockquote,
   margin: 0 auto 4px auto;
 }
 .resumehr {
-  border: 2px solid grey;
-  margin: 12px 0;
+  height: 3px;
+  background-color: rgb(130, 130, 130);
+  border:rgb(130, 130, 130);
 }
 
 
