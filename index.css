@@ -302,7 +302,7 @@ h2 {
 .contactList p {
   margin-top: 30px;
   font-size: 1.1rem;
-  width: 70%;
+  width: 50%;
   padding: 6px 9px;
 }
 .contactList img {
@@ -536,6 +536,10 @@ footer {
   .contactList {
     padding-left: 30px;
   }
+  .contactList p {
+    width: 90%;
+  }
+  
   .fun {
     margin-top: 90px;
     font-size: 2.9rem;
@@ -629,7 +633,6 @@ footer {
     from { margin-top: -18vh; }
     to   { margin-top: 12vh; }
   }
-
   .nav li {
     padding: 12px 0;
     font-size: 1.4rem;
@@ -650,6 +653,7 @@ footer {
   }
   .contactList p {
     font-size: 1.2rem;
+    width: 80%;
   }
   .spin {
     padding: 0 .2vw;
@@ -679,6 +683,9 @@ footer {
     padding-left: 40px;
     padding-right: 40px;
   } 
+  .contactList p {
+    width: 60%;
+  }
   .spin {
     padding: 0 .5vw;
   }
