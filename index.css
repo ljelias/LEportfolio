@@ -214,7 +214,7 @@ html, body {
   background-image: linear-gradient(lightgreen,green);
 }
 
-h2 {
+.sectionTitle {
   font-family: 'Inconsolata', monospace;
   font-size: 1.6rem;
   line-height: 1.1rem;
@@ -302,7 +302,7 @@ h2 {
 .contactList p {
   margin-top: 30px;
   font-size: 1.1rem;
-  width: 50%;
+  width: 90%;
   padding: 6px 9px;
 }
 .contactList img {
@@ -347,7 +347,7 @@ h2 {
 #resumeHeading {
   margin: 15px auto;
 }
-.resumeh1 {
+.resumeh2 {
   margin: 0;
   padding: 0px 0;
   color: rgb(50, 50, 50);
@@ -358,7 +358,7 @@ h2 {
 .resumeh3 {
   margin: 0;
   padding: 0px 0;
-  font-size: 1.1rem;
+  font-size: 0.7rem;
   font-weight: 600;
   color: rgb(196, 75, 75);
   text-align: left;
@@ -462,7 +462,7 @@ footer {
     min-width: 465px;
     padding-top: 30px;
   }
-  h1 {
+  #mainH1 {
     font-size: 2.9rem;
     margin: 12px;
     padding: 6px 0;
@@ -506,6 +506,7 @@ footer {
   }
   .welcome {
     font-size: 4.5rem;
+    line-height: 4rem;
     margin-top: 4vh;
   }
   @keyframes slide-down {
@@ -527,7 +528,7 @@ footer {
     margin: 3px;
     box-shadow: 0px 4px 6px #888888;
   }
-  h2 {
+  .sectionTitle {
     font-size: 1.8rem;
     line-height: 1.1rem;
     margin: 6px 0 24px 0;
@@ -569,6 +570,9 @@ footer {
   .spin {
     padding: 0 0.5vw;
   }
+  .resumeh3 {
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -578,6 +582,7 @@ footer {
   }
   .welcome {
     font-size: 5rem;
+    line-height: 5rem;
     margin-top: 9vh;
   }
   @keyframes slide-down {
@@ -649,6 +654,7 @@ footer {
   }
   .welcome {
     font-size: 5rem;
+    line-height: 5rem;
     margin-top: 12vh;
   }
   @keyframes slide-down {
@@ -680,6 +686,10 @@ footer {
   .spin {
     padding: 0 .2vw;
   }
+  .resumeh3 {
+    font-size: 1.1rem;
+  }
+  
 }
 
 @media only screen and (min-width: 950px) {
@@ -694,6 +704,7 @@ footer {
   }
   .welcome {
     font-size: 6rem;
+    line-height: 6rem;
   }
   .nav {
     margin-top: 12px;
