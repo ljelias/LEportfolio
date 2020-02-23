@@ -56,6 +56,7 @@ html, body {
   padding: 6px 0;
 }
 #mainH1:hover {
+  cursor: pointer;
   background-color: rgb(245, 245, 245);
   box-shadow: 1px 2px 4px #888888;
 }
@@ -98,7 +99,7 @@ html, body {
   margin: 15px 0px;
   text-align: center;
 }
-.nav li {
+.mainLink {
   display: inline;
   margin: 0 -2px;
   padding: 6px 2%;
@@ -108,11 +109,13 @@ html, body {
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
 }
-.nav li:hover {
+.mainLink:hover {
   background-color: rgb(245, 245, 245);
   box-shadow: 1px 2px 4px #888888;
-}
-.nav li:active {
+  cursor: pointer;
+} 
+
+.mainLink:active {
   background-color: rgb(211, 211, 211);
 }
 
@@ -238,18 +241,18 @@ html, body {
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  margin-left: 5vw;
+  margin-left: 4vw;
 }
 .toolList ul {
   list-style-position: inside; 
 }
 
 .project {
-  margin: 40px 0;
+  margin: 30px auto 40px auto;
   padding: 0 6px;
   border: 11px solid rgb(228, 236, 240);
   border-radius: 9px;
-  box-shadow: 6px 9px 18px #888888;
+  box-shadow: 4px 4px 18px #888888;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 300;
   font-size: 0.9rem;
@@ -274,9 +277,10 @@ html, body {
   margin-bottom: 6px;
 }
 .projectLinks {
-  margin: 24px 0 15px 0;
+  margin: 15px 0 6px 0;
 }
 .project a {
+  display: inline-block;
   font-family: 'Courier New', Courier, monospace;
   color: black;
   text-decoration: none;
@@ -285,7 +289,7 @@ html, body {
   border-radius: 3px;
   box-shadow: 1px 2px 4px #b3b3b3;
   padding: 6px 12px;
-  margin-right: 4px;
+  margin: 3px 4px 3px 0;
 }
 .project a:hover {
   border: 2px solid rgb(119, 142, 175);
@@ -319,9 +323,9 @@ html, body {
   font-weight: 700;
 }
 .contactLink:hover {
+  cursor: pointer;
   box-shadow: 1px 2px 4px #888888;
 }
-
 .fun {
   margin-top: 75px;
   font-size: 2.2rem;
@@ -386,7 +390,6 @@ html, body {
   font-weight: 500;
   margin: 0px 0 4px 0;
 }
-
 .resumeh5 {
   font-size: 1.1rem;
   margin: 9px 0 0px 0;
@@ -403,7 +406,6 @@ html, body {
   margin: 0px 0 4px 0;
   font-weight: 600;
 }
-
 .position {
   font-style: italic;
   font-size: 1em;
@@ -491,10 +493,10 @@ footer {
   #mainNav {
     margin: 15px 9px;
   }
-  .nav li {
+  .mainLink {
     padding: 6px 2%;
     font-size: 1.1rem;
-  }  
+  }
   #welcome,
   #bio,
   #skills,
@@ -542,10 +544,10 @@ footer {
     line-height: 2rem;
   }
   .toolList {
-    margin-left: 8vw;
+    margin-left: 7vw;
   }
   .project {
-    margin: 60px 0;
+    margin: 45px auto 60px auto;
     padding: 0 12px;
   }
   .galleryPic {
@@ -555,14 +557,12 @@ footer {
     margin-left: 6px;
     margin-bottom: 6px;
   }
-  
   .contactList {
     padding-left: 30px;
   }
   .contactList p {
     width: 90%;
   }
-  
   .fun {
     margin-top: 90px;
     font-size: 2.9rem;
@@ -597,7 +597,7 @@ footer {
     font-size: 1.3rem;
     line-height: 1.5rem;
   }
-  .nav li {
+  .mainLink {
     margin: 0;
     padding: 6px 3%;
     font-size: 1.2rem;
@@ -637,9 +637,11 @@ footer {
     margin: 15px 24px;
     border-bottom: 1px solid grey;
   }
-  .nav li {
+  .mainLink {
     display: block;
     border-bottom: 0px solid white;
+    padding: 12px 0;
+    font-size: 1.4rem;
   }
 
   #welcome,
@@ -661,16 +663,12 @@ footer {
     from { margin-top: -18vh; }
     to   { margin-top: 12vh; }
   }
-  .nav li {
-    padding: 12px 0;
-    font-size: 1.4rem;
-  }
   #bio p {
     padding-left: 12px;
     padding-right: 12px;
   }
   .toolList {
-    margin-left: 5vw;
+    margin-left: 4vw;
   }  
   #skills li {
     font-size: 1.4rem;
@@ -709,9 +707,9 @@ footer {
   .nav {
     margin-top: 12px;
   }
-  .nav li {
+  .mainLink {
     padding: 12px 0;
-  } 
+  }
   #bio p {
     padding-left: 40px;
     padding-right: 40px;
