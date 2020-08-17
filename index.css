@@ -227,10 +227,22 @@ html, body {
   padding-left: 0px;
   padding-right: 0px;
 }
+.inset {
+  margin-left: 5%;
+  margin-right: 7%;
+}
+.arrowIcon {
+  display: inline-block;
+  font-size: 1.7rem;
+  line-height: 1.6rem;
+  font-weight: 700;
+  margin:0;
+  vertical-align: -12%;
+}
 .smile {
   text-align: right;
   font-size: 2.5rem;
-  margin: 20px 0;
+  margin: 12px;
 }
 
 #skills li {
@@ -300,31 +312,39 @@ html, body {
 }
 
 .contactList {
-  margin-top: 40px;
-  padding-left: 18px;
+  margin-top: 20px;
 }
 .contactList p {
-  margin-top: 30px;
-  font-size: 1.1rem;
-  width: 90%;
-  padding: 6px 9px;
+  margin: 30px auto 0 auto;
+  font-size: 1rem;
+  width: 95%;
+  padding: 9px 12px;
+  border-radius: 6px;
+  border: 1px solid lightgrey;
+  box-shadow: 0px 1px 2px #888888;
 }
 .contactList img {
+  display: inline-block;
   max-height: 30px;
-  vertical-align: middle;
-  margin: 3px 9px;
+  vertical-align: -40%;
+  margin: 0 9px;
 }
 .contactList a {
   text-decoration: none;
   color: black;
 }
 .smIcon {
+  display: inline-block;
   font-size: 1.7rem;
+  vertical-align: -15%;
   font-weight: 700;
+  margin: 4px 0;
 }
+
 .contactLink:hover {
   cursor: pointer;
-  box-shadow: 1px 2px 4px #888888;
+  box-shadow: 2px 4px 6px #888888;
+  background-color: whitesmoke;
 }
 .fun {
   margin-top: 75px;
@@ -538,7 +558,10 @@ footer {
   #bio p {
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
   }
+  
   #skills li {
     font-size: 1.3rem;
     line-height: 2rem;
@@ -557,11 +580,9 @@ footer {
     margin-left: 6px;
     margin-bottom: 6px;
   }
-  .contactList {
-    padding-left: 30px;
-  }
   .contactList p {
-    width: 90%;
+    width: 330px;
+    font-size: 1.1rem;
   }
   .fun {
     margin-top: 90px;
@@ -602,8 +623,11 @@ footer {
     padding: 6px 3%;
     font-size: 1.2rem;
   } 
-  .contactList {
-    padding-left: 39px;
+  #connectTitle {
+    margin-left: 5%;
+  }
+  .contactList p {
+    width: 360px;
   }
   .spin {
     padding: 0 .7vw;
@@ -677,10 +701,19 @@ footer {
     font-size: 1rem;
     line-height: 1.4rem;
   }
+  #connectTitle {
+    margin-left: 0;
+  }
   .contactList p {
     font-size: 1.2rem;
-    width: 80%;
   }
+  .contactList img {
+    vertical-align: -30%;
+  }
+  .smIcon {
+    vertical-align: -10%;
+  }
+  
   .spin {
     padding: 0 .2vw;
   }
@@ -715,8 +748,9 @@ footer {
     padding-right: 40px;
   } 
   .contactList p {
-    width: 60%;
+    width: 390px;
   }
+
   .spin {
     padding: 0 .5vw;
   }
